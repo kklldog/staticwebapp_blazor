@@ -22,8 +22,8 @@ namespace Azfunc
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
-            int a = data.A;
-            int b = data.B;
+            int a = data.a;
+            int b = data.b;
 
             int c = a + b;
 
